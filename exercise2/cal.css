@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-calculator {
+    width: '\f26e'x;
+    overflow: hidden;
+    margin: 0 auto;
+    background: pink;
+    border-radius: 10px;
+    
+}
+
+.wrapper-calculator .header {
+    background: black;
+    border-bottom: 1px #5e5e5e;
+}
+
+.wrapper-calculator .header .result {
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 1.5em;
+    padding: 33px 20px;
+    text-align: right;
+    height: 28px;
+
+}
+
+.wrapper-calculator .header .temporary {
+    background: white;
+    text-align: right;
+    background: rgb(184, 41, 160);
+    color: white;
+    font-weight: normal;
+    padding: 20px 20px 0 20px;
+}
+
+.wrapper-calculator .content {
+    width: 100%;
+}
+
+
+.wrapper-calculator .content .number {
+    width: 75%;
+    display: inline-block;
+    float: left;
+    background-image: linear-gradient(141deg, #5e5e5e 0%, #2c2c2c 75%)
+}
+
+.wrapper-calculator .content .number .items {
+    width: 29%;
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    padding: 24px 4px;
+    text-align: center;
+    transition: all .5s ease-in;
+    background: rgba(128, 128, 128, 0);
+}
+
+.wrapper-calculator .content .number .items:hover:not(#AC) {
+    background: rgb(241, 24, 165) 46% ;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.wrapper-calculator .content .number .items#AC {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.wrapper-calculator .content .number .items#AC:hover {
+    background: #8b8b8b;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper-calculator .content .operator {
+    width: 25%;
+    display: inline-block;
+    background: white;
+}
+
+.wrapper-calculator .content .operator .items {
+    color: black;
+    font-size: 2em;
+    padding: 19.6px 4px;
+    text-align: center;
+    transition: all .5s ease-in;
+}
+
+.wrapper-calculator .content .operator .items:hover {
+    background: #8b8b8b;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.samadengan {
+    text-align: center;
+}
+
+.samadengan div.items {
+    background-image: linear-gradient(230deg, rgb(241, 24, 165) 46%, pink 108%);
+    color: white !important;
+    padding: 20px 0;
+    font-size: 2em;
+
+}
+
+.samadengan div.items:hover {
+    cursor: pointer;
+}
